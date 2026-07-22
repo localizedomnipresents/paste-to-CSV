@@ -7,7 +7,9 @@
 <style>
 :root{color-scheme:light dark;--bg:#fff;--surface:#f9f8f7;--surface2:#f0efed;--text:#2c2c2b;--muted:#6f6c67;--border:#deddda;--blue:#2783de;--blueSoft:#e5f2fc;--green:#287b50;--greenSoft:#e8f1ec;--red:#c8453a;--shadow:0 1px 2px rgba(0,0,0,.05),0 4px 12px rgba(0,0,0,.04)}
 @media(prefers-color-scheme:dark){:root{--bg:#191919;--surface:#202020;--surface2:#2a2a29;--text:#fff;--muted:rgba(255,255,255,.68);--border:rgba(255,255,255,.2);--blue:#5e9fe8;--blueSoft:rgba(94,159,232,.12);--green:#72bc8f;--greenSoft:rgba(114,188,143,.12);--red:#e97366;--shadow:none}}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.5 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}.app{width:min(1080px,100%);margin:auto;padding:32px 28px 44px}header{display:flex;align-items:flex-start;justify-content:space-between;gap:24px;margin-bottom:24px}h1{font-size:clamp(28px,4vw,42px);line-height:1.1;letter-spacing:-.035em;margin:0 0 8px}header p{color:var(--muted);margin:0;max-width:620px}.badge{background:var(--blueSoft);color:var(--blue);padding:6px 10px;border-radius:999px;font-size:14px;font-weight:700;white-space:nowrap}.grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(310px,.85fr);gap:20px}.panel{border:1px solid var(--border);background:var(--surface);border-radius:12px;padding:20px;box-shadow:var(--shadow)}label,.label{display:block;font-weight:700;margin-bottom:8px}.hint{font-size:14px;color:var(--muted);font-weight:400}textarea{display:block;width:100%;min-height:340px;resize:vertical;border:1px solid var(--border);border-radius:8px;background:var(--bg);color:var(--text);padding:14px;font:14px/1.55 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;outline:none}textarea:focus,select:focus,input:focus,button:focus-visible{border-color:var(--blue);box-shadow:0 0 0 3px color-mix(in srgb,var(--blue) 22%,transparent)}.controls{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:18px}.field input,.field select{width:100%;height:44px;border:1px solid var(--border);border-radius:8px;background:var(--bg);color:var(--text);padding:0 12px;font:inherit;outline:none}.check{display:flex;gap:10px;align-items:center;font-size:14px;color:var(--muted);margin:12px 0}.check input{width:18px;height:18px;accent-color:var(--blue)}button{width:100%;min-height:48px;border:0;border-radius:8px;background:var(--blue);color:#fff;font:700 16px/1 system-ui;cursor:pointer;padding:0 18px;margin-top:6px}button:hover{filter:brightness(.96)}button:disabled{opacity:.45;cursor:not-allowed}.status{display:flex;justify-content:space-between;gap:16px;margin:16px 0 10px;color:var(--muted);font-size:14px}.status strong{color:var(--text)}.table-wrap{border:1px solid var(--border);border-radius:8px;overflow:auto;max-height:235px;background:var(--bg)}table{border-collapse:collapse;width:100%;font-size:13px;white-space:nowrap}th,td{padding:9px 11px;border-right:1px solid var(--border);border-bottom:1px solid var(--border);text-align:left;max-width:220px;overflow:hidden;text-overflow:ellipsis}th{position:sticky;top:0;background:var(--surface2);font-weight:700}tr:last-child td{border-bottom:0}th:last-child,td:last-child{border-right:0}.empty{padding:42px 16px;text-align:center;color:var(--muted);font-size:14px}.message{min-height:24px;margin-top:12px;font-size:14px}.message.ok{color:var(--green)}.message.error{color:var(--red)}.truncnote{font-size:13px;color:var(--muted);margin-top:8px;min-height:18px}@media(max-width:780px){.app{padding:24px 16px 36px}header{display:block}.badge{display:inline-block;margin-top:16px}.grid{grid-template-columns:1fr}.controls{grid-template-columns:1fr}textarea{min-height:260px}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.5 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}.app{width:min(1080px,100%);margin:auto;padding:32px 28px 44px}header{display:flex;align-items:flex-start;justify-content:space-between;gap:24px;margin-bottom:24px}h1{font-size:clamp(28px,4vw,42px);line-height:1.1;letter-spacing:-.035em;margin:0 0 8px}header p{color:var(--muted);margin:0;max-width:620px}.badge{background:var(--blueSoft);color:var(--blue);padding:6px 10px;border-radius:999px;font-size:14px;font-weight:700;white-space:nowrap}.grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(310px,.85fr);gap:20px}.panel{border:1px solid var(--border);background:var(--surface);border-radius:12px;padding:20px;box-shadow:var(--shadow)}label,.label{display:block;font-weight:700;margin-bottom:8px}.hint{font-size:14px;color:var(--muted);font-weight:400}textarea{display:block;width:100%;min-height:340px;resize:vertical;border:1px solid var(--border);border-radius:8px;background:var(--bg);color:var(--text);padding:14px;font:14px/1.55 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;outline:none}textarea:focus,select:focus,input:focus,button:focus-visible,summary:focus-visible{border-color:var(--blue);box-shadow:0 0 0 3px color-mix(in srgb,var(--blue) 22%,transparent)}.controls{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:18px}.field input,.field select{width:100%;height:44px;border:1px solid var(--border);border-radius:8px;background:var(--bg);color:var(--text);padding:0 12px;font:inherit;outline:none}.check{display:flex;gap:10px;align-items:center;font-size:14px;color:var(--muted);margin:12px 0}.check input{width:18px;height:18px;accent-color:var(--blue)}button{width:100%;min-height:48px;border:0;border-radius:8px;background:var(--blue);color:#fff;font:700 16px/1 system-ui;cursor:pointer;padding:0 18px;margin-top:6px}button:hover{filter:brightness(.96)}button:disabled{opacity:.45;cursor:not-allowed}.btnGhost{width:auto;min-height:42px;padding:0 16px;background:var(--bg);color:var(--text);border:1px solid var(--border);font:700 14px/1 system-ui;margin-top:0}.btnGhost:hover{background:var(--surface2);filter:none}.status{display:flex;justify-content:space-between;gap:16px;margin:16px 0 10px;color:var(--muted);font-size:14px}.status strong{color:var(--text)}.table-wrap{border:1px solid var(--border);border-radius:8px;overflow:auto;max-height:235px;background:var(--bg)}table{border-collapse:collapse;width:100%;font-size:13px;white-space:nowrap}th,td{padding:9px 11px;border-right:1px solid var(--border);border-bottom:1px solid var(--border);text-align:left;max-width:220px;overflow:hidden;text-overflow:ellipsis}th{position:sticky;top:0;background:var(--surface2);font-weight:700}tr:last-child td{border-bottom:0}th:last-child,td:last-child{border-right:0}.empty{padding:42px 16px;text-align:center;color:var(--muted);font-size:14px}.message{min-height:24px;margin-top:12px;font-size:14px}.message.ok{color:var(--green)}.message.error{color:var(--red)}.truncnote{font-size:13px;color:var(--muted);margin-top:8px;min-height:18px}
+.advanced{margin-top:20px;border:1px solid var(--border);background:var(--surface);border-radius:12px;padding:0 20px}.advanced summary{cursor:pointer;font-weight:700;padding:16px 0;list-style:none;display:flex;align-items:center;gap:10px;border-radius:8px}.advanced summary::-webkit-details-marker{display:none}.advanced summary::before{content:'▸';color:var(--muted);font-size:13px}.advanced[open] summary::before{content:'▾'}.advBody{padding:0 0 20px;max-width:760px;border-top:1px solid var(--border);margin-top:-1px;padding-top:18px}.advBody p{margin:0 0 12px;color:var(--muted);font-size:15px}.advBody ol{margin:0 0 16px;padding-left:22px;color:var(--muted);font-size:15px}.advBody li{margin-bottom:6px}.advBody code{background:var(--surface2);border-radius:4px;padding:1px 5px;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:13px;color:var(--text)}.advNote{font-size:14px;margin-left:12px;color:var(--muted)}.advNote.ok{color:var(--green)}.advNote.error{color:var(--red)}.advRow{display:flex;align-items:center;flex-wrap:wrap;gap:4px}
+@media(max-width:780px){.app{padding:24px 16px 36px}header{display:block}.badge{display:inline-block;margin-top:16px}.grid{grid-template-columns:1fr}.controls{grid-template-columns:1fr}textarea{min-height:260px}.advanced{padding:0 16px}}
 </style>
 </head>
 <body>
@@ -32,6 +34,21 @@
 <div id="truncnote" class="truncnote"></div>
 </section>
 </div>
+
+<details class="advanced">
+<summary>Advanced: build a redirect map from search results</summary>
+<div class="advBody">
+<p>Migrating a site and need a list of its indexed URLs? This snippet reads the search results currently displayed in your browser and copies their paths as two-column CSV, ready to paste above.</p>
+<ol>
+<li>Search for <code>site:yourdomain.com</code> in Google. Add <code>&amp;num=100</code> to the address bar to load more results per page.</li>
+<li>Open DevTools (<code>F12</code>) and switch to the Console tab.</li>
+<li>Click the button below, then paste into the console and press Enter. Chrome blocks pasted code the first time — if prompted, type <code>allow pasting</code>, press Enter, then paste again.</li>
+<li>Paste the result into the text area above. Tick <em>First row is a header</em>, then download.</li>
+</ol>
+<p><strong>Reads one page at a time.</strong> Only the results currently on screen are captured, so run it on each page of results and paste them one after another. Every target path is set to <code>/</code> as a placeholder — edit the second column to the real destinations before using the file.</p>
+<div class="advRow"><button id="copySnippet" type="button" class="btnGhost">Copy console snippet</button><span id="snippetNote" class="advNote" role="status" aria-live="polite"></span></div>
+</div>
+</details>
 </main>
 <script>
 const $=id=>document.getElementById(id), source=$('source'), delimiter=$('delimiter'), filename=$('filename'), preview=$('preview'), rowsEl=$('rows'), colsEl=$('cols'), button=$('download'), message=$('message'), headerEl=$('header'), truncnote=$('truncnote');
@@ -90,6 +107,72 @@ function update(){
 [delimiter,headerEl].forEach(el=>el.addEventListener('change',update));
 button.addEventListener('click',()=>{
   try{let name=cleanFilename(filename.value)||'export.csv';if(!name.toLowerCase().endsWith('.csv'))name+='.csv';const width=Math.max(0,...data.map(r=>r.length));const csv=data.map(r=>Array.from({length:width},(_,i)=>csvCell(r[i]||'')).join(',')).join('\r\n');const blob=new Blob([$('bom').checked?'\ufeff':'',csv],{type:'text/csv;charset=utf-8'});const url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download=name;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);message.textContent='Downloaded '+name;message.className='message ok'}catch(e){message.textContent='Could not create the CSV file.';message.className='message error'}
+});
+
+/* ---------- Console snippet ---------- */
+// The text below is copied verbatim for the user to run in their browser's
+// DevTools console. Backslashes are doubled here because this is a template
+// literal; what lands on the clipboard is ordinary JavaScript.
+const consoleSnippet = `copy((() => {
+  const rows = [], seen = new Set();
+  let host = null, skipped = 0;
+
+  document.querySelectorAll('a h3').forEach(h3 => {
+    // closest('a') rather than parentElement: the h3 is often nested several
+    // levels inside the link, so parentElement misses it silently.
+    const a = h3.closest('a');
+    if (!a || !a.href) { skipped++; return; }
+
+    let url;
+    try { url = new URL(a.href); } catch (e) { skipped++; return; }
+
+    // Ignore the search engine's own links (menus, tools, pagination).
+    if (/(^|\\.)google\\./i.test(url.hostname)) return;
+
+    const path = url.pathname.replace(/\\/$/, '');
+    if (!path) return;                       // homepage needs no redirect
+
+    if (!host) host = url.hostname;
+    else if (host !== url.hostname) host = '(multiple domains)';
+
+    // Deduplicate on the finished row string. Putting objects in a Set does
+    // nothing, because every object is a distinct reference.
+    const row = path + ',/';
+    if (seen.has(row)) return;
+    seen.add(row);
+    rows.push(row);
+  });
+
+  if (!rows.length) return 'No search results found on this page.';
+
+  console.log('Domain: ' + host);
+  console.log(rows.length + ' unique paths from THIS page of results' +
+              (skipped ? ' (' + skipped + ' links skipped)' : ''));
+  return 'Source path,Target path\\n' + rows.join('\\n');
+})());
+console.log('Copied. Paste it into the Paste to CSV tool and tick "First row is a header".');`;
+
+async function copyText(text){
+  try{
+    if(navigator.clipboard&&window.isSecureContext){ await navigator.clipboard.writeText(text); return true; }
+    throw new Error('clipboard unavailable');
+  }catch(e){
+    // Fallback for insecure contexts, e.g. a page opened directly from disk.
+    try{
+      const ta=document.createElement('textarea');
+      ta.value=text; ta.setAttribute('readonly','');
+      ta.style.position='fixed'; ta.style.top='-1000px';
+      document.body.appendChild(ta); ta.select();
+      const ok=document.execCommand('copy'); ta.remove(); return ok;
+    }catch(e2){ return false; }
+  }
+}
+$('copySnippet').addEventListener('click', async () => {
+  const note=$('snippetNote');
+  const ok=await copyText(consoleSnippet);
+  note.textContent = ok ? 'Copied — paste it into the DevTools console.' : 'Copy failed. Select the snippet manually from the page source.';
+  note.className = 'advNote '+(ok?'ok':'error');
+  setTimeout(()=>{ note.textContent=''; note.className='advNote'; }, 6000);
 });
 </script>
 </body>
